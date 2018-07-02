@@ -18,4 +18,6 @@ public interface StudentDao {
     public void insert(Student student);
 
     public void delete(Integer id);
+
+    public Student selectByName(String name);
 }
