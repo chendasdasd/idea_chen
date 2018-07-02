@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "../mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.StudentDao">
+     
+     <select id="selectAll" resultType="Student">
+     	select *
+     	from student
+     </select>
+
+     <select id="selectById" resultType="Student">
+     	select *
+     	from student
+     	where id=#{0}
+     </select>
+     
+     <insert id="insert">
+     	insert into student(name,groupID,groupName) values(#{name},#{groupID},#{groupName})
+     </insert>
+     
+     <update id="update">
+		update student set name=#{name},groupID=#{groupID},groupName=#{groupName} where id=#{id}
+     
+     </update>
+     
+     <delete id="delete">
+     	delete from student where id=#{0}
+     </delete>
+     
+</mapper>
