@@ -20,4 +20,6 @@ public interface StudentDao {
     public void delete(Integer id);
 
     public Student selectByName(String name);
+
+    public void m2();
 }
