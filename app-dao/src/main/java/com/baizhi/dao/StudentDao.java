@@ -21,5 +21,7 @@ public interface StudentDao {
 
     public Student selectByName(String name);
 
+    public void m1();
+
     public void m2();
 }
